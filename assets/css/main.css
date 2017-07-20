@@ -5885,6 +5885,7 @@ section {
   margin: 20px auto !important; }
 
 .price-page, .contact-page, .service-page, .index-page {
+  overflow: hidden;
   background-image: url(../img/home-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -5979,11 +5980,11 @@ section {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
   .carousel-3 .index-left-arrow, .carousel-4 .index-left-arrow {
-    left: -5%;
+    left: -5%; }
+  .carousel-3 .index-right-arrow, .carousel-4 .index-right-arrow {
+    right: -5%;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg); }
-  .carousel-3 .index-right-arrow, .carousel-4 .index-right-arrow {
-    right: -5%; }
 
 .service-table {
   margin-top: 15px; }
@@ -6010,8 +6011,7 @@ header .info {
   margin-top: 80px; }
 
 .index-page {
-  color: #c6cfe4;
-  overflow: hidden; }
+  color: #c6cfe4; }
   .index-page .index-text {
     margin: 20px 0 !important; }
 
@@ -6272,9 +6272,6 @@ section.contact-us {
     display: block;
     margin: 0 auto; }
 
-.service-page {
-  overflow: hidden; }
-
 section.service-sale {
   margin-top: 270px; }
 
@@ -6454,11 +6451,11 @@ footer.footer {
   section.index-stuff .tab-4 {
     right: 35% !important;
     bottom: -192% !important; }
-  section.index-carousel .index-arrow {
+  .owl-carousel .index-arrow {
     opacity: 1 !important; }
-  section.index-carousel .index-left-arrow {
+  .owl-carousel .index-left-arrow {
     left: 0% !important; }
-  section.index-carousel .index-right-arrow {
+  .owl-carousel .index-right-arrow {
     right: 0% !important; } }
 
 @media (max-width: 767px) {
@@ -6497,7 +6494,8 @@ footer.footer {
 
 @media (max-width: 750px) {
   section.index-rent {
-    margin-top: 50px; }
+    margin-top: 0;
+    background: none !important; }
     section.index-rent .wrap-rent {
       top: 83%;
       text-align: center; }
@@ -6511,8 +6509,8 @@ footer.footer {
     width: 100%;
     margin-left: -2px !important; }
     section.index-stuff .index-tab a {
-      width: 50px !important;
-      height: 50px !important; }
+      width: 65px !important;
+      height: 65px !important; }
   section.index-stuff h5 {
     display: none; } }
 

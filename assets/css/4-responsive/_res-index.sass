@@ -58,7 +58,8 @@
       right: 35% !important
       bottom: -192% !important
 
-  section.index-carousel
+  // Carousel global
+  .owl-carousel
     .index-arrow
       opacity: 1 !important
 
@@ -104,26 +105,20 @@
         margin-left: -20px
         width: 100px
 
-
-      .tab-1
-        // left: 0 !important
-
       .tab-2
-        // left: 150px !important
         margin-left: 25%
 
       .tab-3
-        // left: 300px !important
         margin-left: 50%
 
       .tab-4
-        // left: 450px !important
         margin-left: 75%
 
 @media (max-width: 750px)
   section.index-rent
-    margin-top: 50px
-    
+    margin-top: 0
+    background: none !important
+
     .wrap-rent
       top: 83%
       text-align: center
@@ -135,15 +130,13 @@
 
 @media (max-width: 520px)
   section.index-stuff
-
-
     .index-tab
       width: 100%
       margin-left: -2px !important
 
       a
-        width: 50px !important
-        height: 50px !important
+        width: 65px !important
+        height: 65px !important
 
     h5
       display: none
