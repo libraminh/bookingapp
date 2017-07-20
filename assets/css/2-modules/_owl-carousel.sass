@@ -1,6 +1,7 @@
 // Carousel Global
-.carousel-3, .carousel-4
+.carousel-2, .carousel-3, .carousel-4
   position: relative
+
 
   &:hover .index-arrow
     opacity: 1
@@ -25,3 +26,19 @@
   .index-right-arrow
     right: -5%
     transform: rotateY(180deg)
+
+@media (min-width: $screen-md-min)
+  .owl-item
+    margin: 0 auto !important
+    padding: 50px 0
+    opacity: 0.6 !important
+
+    img
+      width: 75% !important
+      margin-top: 25px !important
+
+  .owl-item.center
+    opacity: 1 !important
+    img
+      margin-top: 40px !important
+      transform: scale(1.2)

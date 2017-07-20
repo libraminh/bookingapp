@@ -1,7 +1,9 @@
 $(document).ready(function(){
   customcarousel();
   scrollAnimate();
-$("[rel='popover']").popover();
+$("[rel='popover']").popover({
+  trigger : 'focus'
+  });
 });
 
 function scrollAnimate() {
@@ -29,23 +31,25 @@ function customcarousel() {
     });
     // Index Carousel
     $('.carousel-2').owlCarousel({
-      items: 3,
+      items: 4,
       loop: true,
       nav: true,
       navText: ['<img class="index-arrow index-left-arrow" src="assets/img/svg/arrow.svg" >','<img class="index-arrow index-right-arrow" src="assets/img/svg/arrow.svg" >'],
       navElement: 'span',
-      margin: 20,
+      margin: 0,
       responsiveClass:true,
       responsive:{
         0:{
             items:1,
         },
         768:{
+            margin: 20,
             items:2,
         },
         1000:{
             items:3,
-            nav: true
+            nav: true,
+            center: true,
         }
       }
     });
@@ -77,18 +81,19 @@ function customcarousel() {
       loop: true,
       nav: true,
       navText: ['<img class="index-arrow index-left-arrow" src="assets/img/svg/arrow.svg" >','<img class="index-arrow index-right-arrow" src="assets/img/svg/arrow.svg" >'],
-      margin: 20,
+      margin: 0,
       responsiveClass:true,
       responsive:{
         0:{
             items:1,
         },
         768:{
+            margin: 20,
             items:2,
         },
         1000:{
             items:3,
-            nav: true
+            center: true,
         }
       }
     });
