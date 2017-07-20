@@ -6502,7 +6502,13 @@ footer.footer {
       section.index-rent .wrap-rent p {
         font-size: 15px;
         width: 100%;
-        margin: 20px 0; } }
+        margin: 20px 0; }
+  section.index-stuff .index-tab {
+    margin: 5px 0 20px 0; } }
+
+@media (max-width: 560px) {
+  section.index-stuff {
+    height: 670px !important; } }
 
 @media (max-width: 520px) {
   section.index-stuff .index-tab {
@@ -6528,8 +6534,7 @@ footer.footer {
 
 @media (max-width: 767px) {
   section.service-func .service-func-tab li {
-    display: inline-block;
-    margin: 0 5px; }
+    display: inline-block; }
   section.service-func .service-func-tab a:after {
     width: 15px;
     height: 16px;
@@ -6545,6 +6550,9 @@ footer.footer {
     right: 35%; }
   section.service-func-service .service-func-tab {
     padding: 10px 0; }
+    section.service-func-service .service-func-tab li {
+      display: inline-block;
+      margin: 0 10px; }
     section.service-func-service .service-func-tab a:hover::after {
       display: none; } }
 
