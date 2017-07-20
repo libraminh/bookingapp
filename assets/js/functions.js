@@ -1,6 +1,7 @@
 $(document).ready(function(){
   customcarousel();
   scrollAnimate();
+$("[rel='popover']").popover();
 });
 
 function scrollAnimate() {

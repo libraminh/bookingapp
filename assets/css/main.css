@@ -5905,6 +5905,15 @@ section {
   display: block;
   margin: 0 auto; }
 
+.popover {
+  max-width: 400px;
+  width: 300px;
+  color: #797f94;
+  display: none !important; }
+  @media (max-width: 520px) {
+    .popover {
+      display: block !important; } }
+
 .btn-accent {
   background: #33405f;
   color: #ffffff;
@@ -6498,6 +6507,8 @@ footer.footer {
     background: none !important; }
     section.index-rent .wrap-rent {
       top: 83%;
+      left: auto;
+      right: auto;
       text-align: center; }
       section.index-rent .wrap-rent p {
         font-size: 15px;
@@ -6554,7 +6565,9 @@ footer.footer {
       display: inline-block;
       margin: 0 10px; }
     section.service-func-service .service-func-tab a:hover::after {
-      display: none; } }
+      display: none; }
+  section.service-func-service .popover {
+    display: block !important; } }
 
 @media (max-width: 991px) {
   .footer {
