@@ -1,0 +1,38 @@
+section.contact-mes
+  .row
+    .col-sm-6.left-mes
+      h2.mes-title.text-uppercase
+        span.text-red Nhắn tin 
+        | cho chúng tôi
+      .triangle
+        img.triangle-img(src="assets/img/svg/up-arrow.svg", alt="up-arrow")
+        
+      .row
+        .col-sm-6
+          form
+            .form-group
+              input#name.form-control(type='text' placeholder="Your name...")
+        
+        .col-sm-6
+          form
+            .form-group
+              input#email.form-control(type='email' placeholder="Your email...")
+                
+        .col-sm-12
+          form
+            .form-group
+              input#subject.form-control(type='text' placeholder="Your Subject...")
+        
+        .col-sm-12
+          form
+            .form-group
+              textarea#comment.form-control(rows='4' placeholder="Write comment...")
+        .col-sm-12
+          a.btn.btn-accent-red.btn-lg(href="#") Gửi Tin Nhắn
+                
+    .col-sm-6.right-mes
+      img.contact-img(src="assets/img/contact-page/contact.jpg", alt="contact")
+                
+          
+
+  

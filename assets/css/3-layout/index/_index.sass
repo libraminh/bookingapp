@@ -1,0 +1,151 @@
+.index-page
+  color: $text-color-5
+  overflow: hidden
+
+  .index-text
+    margin: 20px 0 !important
+
+section.index-rent
+  margin: 200px 0
+  height: 520px
+  background:
+    image: url(../img/index/04.png)
+    repeat: no-repeat
+    size: 90%
+    position: left
+  position: relative
+
+  .wrap-rent
+    text-align: right
+    position: absolute
+    top: 14%
+    right: 12%
+
+  h3
+    color: $accent-blue-color
+    @extend %font-weight
+
+  p
+    margin: 30px 0
+    color: $text-color-2
+
+section.index-contact
+  p
+    color: $text-color-4
+
+  .index-text
+    color: $text-color-5
+
+section.index-mes
+  input, textarea
+    background: none
+    border-color: $text-color-4
+    border-radius: 0
+    color: $white-color
+
+    &:focus
+      border-color : $text-color-4
+      box-shadow: none
+
+    &::placeholder
+      color: $text-color-4
+
+section.index-video
+  margin-bottom: 50px
+
+  iframe
+    margin: 0 auto
+    display: block
+    width: 80%
+
+  h2, p
+    color: $text-color-2
+
+section.index-carousel
+  margin-bottom: 50px
+
+  .carousel-2
+    position: relative
+
+    &:hover .index-arrow
+      opacity: 1
+
+    &:hover .index-left-arrow
+      left: 0
+
+    &:hover .index-right-arrow
+      right: 0
+
+    .index-arrow
+      opacity: 0
+      position: absolute
+      top: 50%
+      width: 50px
+      z-index: 1000
+      transition: all .2s ease-in-out
+
+    .index-left-arrow
+      left: -5%
+      transform: rotateY(180deg)
+
+    .index-right-arrow
+      right: -5%
+
+section.index-stuff
+  height: 1000px
+  margin-top: 80px
+
+  .index-content
+    position: absolute
+    top: 5%
+    left: 119px
+    width: 356px
+    height: 223px
+    overflow: hidden !important
+
+    .index-pic
+      width: 100%
+
+  .index-stuff-pic
+    width: 100%
+    margin: 0 auto
+
+  .index-tab
+    li
+      display: inline-block
+      position: absolute
+
+    a
+      @extend %service-tab
+      width: 100px
+      height: 100px
+
+    h5
+      color: $black-col
+      @extend %font-weight
+      margin-left: -10px
+
+    .tab-1
+      bottom: -25%
+      left: -12%
+
+    .tab-2
+      bottom: -100%
+      left: -26%
+
+    .tab-3
+      right: 28%
+      bottom: -175%
+
+    .tab-4
+      right: 5%
+      bottom: -102%
+
+section.index-table
+  .wrap-contact-table
+    border: none !important
+    color: $text-color-2
+
+    .table-1, .table-2
+      &:before
+        background: $text-color-2

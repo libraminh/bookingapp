@@ -1,0 +1,27 @@
+@media (max-width: $screen-xs-max)
+  section.service-func
+    .service-func-tab
+      li
+        display: inline-block
+        margin: 0 5px
+
+      a
+        &:after
+          width: 15px
+          height: 16px
+          transform: rotate(115deg) skewX(-38deg)
+          top: 84%
+          right: 39%
+
+        &:before
+          width: 20px
+          height: 12px
+          top: 82%
+          right: 35%
+
+  section.service-func-service
+    .service-func-tab
+      padding: 10px 0
+
+      a:hover::after
+        display: none

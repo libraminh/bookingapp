@@ -1,0 +1,63 @@
+%font-weight
+  font-weight: 600
+
+%white-link
+  color: $white-color !important
+
+
+%service-tab
+  display: block
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  margin: 15px 0
+  position: relative
+  border: 2px solid $border-color
+  background: $white-color
+  transition: all .1s ease-in-out
+
+  img
+    width: 100%
+    display: block
+    margin: 5px auto 0
+
+a:hover
+  color: $white-color !important
+
+section
+  padding: 0 9px
+
+.text-blue
+  color: $accent-blue-color
+  @extend %font-weight
+
+.text-red
+  color: $accent-red-color
+  @extend %font-weight
+
+// triangle
+.triangle-img
+  width: 30px !important
+  transform: rotate(180deg)
+  margin: 20px auto !important
+
+.price-page, .contact-page, .service-page, .index-page
+  background:
+    image: url(../img/home-banner.jpg)
+    repeat: no-repeat
+    size: cover
+    position: top
+
+.index-page
+  background-image: url(../img/home-bg.png)
+
+.contact-page
+  background-image: url(../img/contact-bg.png)
+
+.service-page
+  background-image: url(../img/service-bg.png)
+
+.service-stuff-1
+  width: 100%
+  display: block
+  margin: 0 auto

@@ -1,0 +1,149 @@
+.service-page
+  overflow: hidden
+
+section.service-sale
+  margin-top: 270px
+
+section.service-exam
+  margin: 20px 0 30px
+
+  .service-exam-pic
+    width: 100%
+
+section.service-func
+  padding: 50px 0
+
+  .service-func-tab
+    a
+      @extend %service-tab
+
+      &:hover::after, &:hover::before
+        opacity: 1
+
+      &:hover
+        border: 2px solid $accent-red-color
+        background: $white-color !important
+
+
+      &:after
+        display: block
+        opacity: 0
+        content: ''
+        width: 15px
+        height: 16px
+        border-top: 2px solid red
+        border-right: 2px solid red
+        transform: rotate(25deg) skewX(-38deg)
+        position: absolute
+        top: 35%
+        right: -10%
+        background: $white-color
+
+      &:before
+        opacity: 0
+        width: 12px
+        height: 20px
+        display: block
+        content: ''
+        background: $white-color
+        border-radius: 50%
+        position: absolute
+        top: 33%
+        right: 0%
+        z-index: 1
+
+  .tab-content
+    h3
+      margin-bottom: 25px
+
+section.service-func-service
+  padding: 50px 0
+
+  .service-phone
+    width: 100%
+    display: block
+    margin: 0 auto
+    position: relative
+    z-index: 1
+
+  .wrap-content
+    width: 48%
+    position: absolute
+    top: 15%
+    left: 26%
+
+  .content-pic
+    width: 100%
+
+  .service-func-tab
+    padding-top: 50px
+
+    a
+      margin: 0 auto
+      background: none !important
+      @extend %service-tab
+
+      &:hover, &:focus, &:active
+        background: none !important
+
+      &:hover::after
+        opacity: 1
+
+      &:hover
+        border: 2px solid $accent-red-color
+
+      &:after
+        display: block
+        opacity: 0
+        content: ''
+        width: 249px
+        height: 2px
+        background: $accent-red-color
+        position: absolute
+        top: 50%
+        left: 100%
+        transition: all .1s ease-in-out
+
+    .link-3, .link-4
+      &:after
+        opacity: 0
+        display: block
+        content: ''
+        width: 249px
+        height: 2px
+        background: $accent-red-color
+        position: absolute
+        top: 50%
+        left: auto
+        right: 100%
+
+section.service-carousel
+  .owl-carousel
+    overflow: hidden
+
+  .carousel-3
+    position: relative
+
+    &:hover .index-arrow
+      opacity: 1
+
+    &:hover .index-left-arrow
+      left: 0
+
+    &:hover .index-right-arrow
+      right: 0
+
+    .index-arrow
+      opacity: 0
+      position: absolute
+      top: 50%
+      width: 50px
+      z-index: 1000
+      transition: all .2s ease-in-out
+
+    .index-left-arrow
+      left: -5%
+      transform: rotateY(180deg)
+
+    .index-right-arrow
+      right: -5%

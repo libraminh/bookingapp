@@ -1,0 +1,40 @@
+// MAIN NAV
+.main-nav
+  background: rgba($navbar-bg, 0.9)
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 10
+
+  .navbar
+    margin: 0
+    padding: 20px 0
+    background: none
+    border: none
+    transition: all .3s ease-in-out !important
+
+  .changeNav
+    padding: 10px 0
+
+
+  .navbar-nav
+    a
+      @extend %white-link
+      transition: all .1s ease-in-out
+
+      &:hover
+        color: rgba($accent-red-color,0.9) !important
+
+  .navbar-brand
+    @extend %white-link
+    font-size: 25px
+
+    &:first-letter
+      color: $accent-red-color
+
+    span
+      @extend %font-weight
+
+.changeBG
+  background: $navbar-bg

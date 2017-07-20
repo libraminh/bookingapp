@@ -1,0 +1,17 @@
+// BUTTON
+=btn-accent($color)
+  background: $color
+  color: $white-color
+  border-radius: 0
+  padding: 10px 20px
+  transition: all .2s ease-in-out
+
+  &:hover
+    background: darken($color, 10)
+    box-shadow: -2px 2px 5px 2px rgba(black,0.2)
+
+.btn-accent
+  +btn-accent($accent-blue-color)
+
+.btn-accent-red
+  +btn-accent($btn-red-bg)

@@ -1,0 +1,30 @@
+.service-table
+  margin-top: 15px
+
+  .thumbnail
+    padding: 50px 0
+    border-radius: 0
+    transition: all .1s ease-in-out
+
+    &:hover
+      box-shadow: 0px 0px 15px 5px rgba(black,0.1)
+
+  .caption
+    h3
+      @extend %font-weight
+
+    p
+      @extend %font-weight
+
+    ul
+      margin-top: 20px
+
+      li
+        color: $accent-blue-color
+        padding: 7px 0
+        @extend %font-weight
+
+    img
+      width: 100%
+      display: block
+      margin: 0 auto

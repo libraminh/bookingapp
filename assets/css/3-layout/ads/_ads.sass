@@ -1,0 +1,100 @@
+// ADS SERVICE
+section.service
+  margin-top: 22%
+
+// ADS INFO
+.info
+  padding: 40px 11px 0
+
+  .info-title
+    color: $accent-red-color
+    font-size: 30px
+    @extend %font-weight
+
+  .breadcrumb
+    background: none
+    padding: 0
+
+    a
+      color: $text-color-2
+
+// SECTION CUSTOMER
+section.customer
+  padding: 30px 0 100px
+
+  .owl-carousel
+    margin-top: 30px
+
+// SECTION CAROUSEL
+.carousel-1
+  position: relative
+
+  .content
+    margin-top: 50px
+    position: relative
+    z-index: 1
+
+    &:after
+      display: block
+      content: ''
+      width: 100%
+      height: 100px
+      background:
+        image: url(../img/carousel/quote.png)
+        repeat: no-repeat
+        position: left
+      position: absolute
+      top: -50px
+      left: 0
+      z-index: -1
+      opacity: 0.05
+
+  .owl-item .triangle-img
+    width: 20px !important
+    height: auto
+    margin: 20px 0 !important
+
+  .owl-nav
+    position: absolute
+    top: 0
+    right: 0
+
+    img
+      width: 30px
+      height: auto
+
+    .left-arrow
+      transform: rotateY(180deg)
+      margin-right: 5px
+
+.direction
+  margin-top: 10px
+
+  .url
+    &:hover span
+      opacity: 1
+
+    img
+      margin: 10px 0
+      width: 100%
+
+  %line
+    position: absolute
+    opacity: 0
+    width: 80px
+    height: 80px
+    transition: all .1s ease-in-out
+
+  .line-1
+    @extend %line
+    top: 0
+    right: 4px
+    border-top: 2px solid $accent-red-color
+    border-right: 2px solid $accent-red-color
+
+  .line-2
+    @extend %line
+    bottom: 0
+    left: 4px
+    border-bottom: 2px solid $accent-red-color
+    border-left: 2px solid $accent-red-color
