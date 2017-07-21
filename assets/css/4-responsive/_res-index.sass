@@ -134,9 +134,17 @@
     .index-tab
       margin: 5px 0 20px 0
 
-@media (max-width: 560px)
+@media (max-width: 660px) and (min-width: 500px)
   section.index-stuff
-    height: 670px !important
+    height: 650px !important
+
+@media (max-width: 500px)
+  section.index-stuff
+    height: 560px !important
+
+    .index-tab
+      h5
+        color: $text-color-5 !important
 
 @media (max-width: 520px)
   section.index-stuff
