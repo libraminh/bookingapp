@@ -6067,6 +6067,22 @@ button.close {
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #ff3249; }
 
+body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
+  background: #555555;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  background: #555555;
+  width: 10px; }
+
+body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
+  background: #cb0017;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; }
+
 .text-blue, .text-red, .main-nav .navbar-brand span, .service-table .caption h3, .service-table .caption p, .service-table .caption ul li, section.index-rent h3, section.index-stuff .index-tab h5, .info .info-title {
   font-weight: 600; }
 
@@ -6758,9 +6774,9 @@ footer.footer {
     margin: 0 auto !important; } }
 
 @media (max-width: 991px) {
-  .service-func-tab {
+  section.service-func-service .service-func-tab {
     padding: 10px 0; }
-    .service-func-tab a:hover::after {
+    section.service-func-service .service-func-tab a:hover::after {
       display: none !important; } }
 
 @media (max-width: 767px) {
