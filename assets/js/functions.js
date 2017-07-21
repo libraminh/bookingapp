@@ -2,8 +2,19 @@ $(document).ready(function(){
   customcarousel();
   scrollAnimate();
   setPopOver();
+  clickTab();
 
 });
+
+function clickTab() {
+  var linkTab = $('section.service-func li a');
+
+  $(linkTab).on('click', function(){
+    $(this).addClass('active');
+    $(this).parent().siblings().find('a').removeClass('active');
+  })
+
+}
 
 function setPopOver() {
   $("[rel='popover']").popover({

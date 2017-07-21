@@ -6535,7 +6535,7 @@ section.service-func {
     top: 35%;
     right: -10%;
     background: #ffffff; }
-  section.service-func .service-func-tab a:before, section.service-func .service-func-tab a.active::after {
+  section.service-func .service-func-tab a:before {
     opacity: 0;
     width: 12px;
     height: 20px;
@@ -6547,6 +6547,10 @@ section.service-func {
     top: 33%;
     right: 0%;
     z-index: 1; }
+  section.service-func .service-func-tab a.active::after {
+    opacity: 1; }
+  section.service-func .service-func-tab a.active::before {
+    opacity: 1; }
   section.service-func .tab-content h3 {
     margin-bottom: 25px; }
 
@@ -6570,11 +6574,11 @@ section.service-func-service {
     section.service-func-service .service-func-tab a {
       margin: 0 auto;
       background: none !important; }
-      section.service-func-service .service-func-tab a:hover, section.service-func-service .service-func-tab a:focus, section.service-func-service .service-func-tab a:active {
+      section.service-func-service .service-func-tab a:hover, section.service-func-service .service-func-tab a:focus {
         background: none !important; }
       section.service-func-service .service-func-tab a:hover::after {
         opacity: 1; }
-      section.service-func-service .service-func-tab a:hover {
+      section.service-func-service .service-func-tab a:hover, section.service-func-service .service-func-tab a.active {
         border: 2px solid #ff3249; }
       section.service-func-service .service-func-tab a:after {
         display: block;
@@ -6670,12 +6674,14 @@ footer.footer {
         margin-left: 75%; } }
 
 @media (max-width: 991px) {
-  section.index- .wrap-rent {
-    top: 18%;
-    right: 10%; }
-    section.index- .wrap-rent p {
-      width: 60%;
-      margin: 18px 0 18px 40%; }
+  section.index-rent {
+    height: 350px; }
+    section.index-rent .wrap-rent {
+      top: 3%;
+      right: 10%; }
+      section.index-rent .wrap-rent p {
+        width: 60%;
+        margin: 18px 0 18px 40%; }
   section.index-video iframe {
     width: 100%; }
   section.index-stuff .index-content {
@@ -6760,7 +6766,7 @@ footer.footer {
 @media (max-width: 767px) {
   section.service-func .service-func-tab li {
     display: inline-block; }
-  section.service-func .service-func-tab a:after {
+  section.service-func .service-func-tab a:after, section.service-func .service-func-tab a.active::after {
     width: 15px;
     height: 16px;
     -webkit-transform: rotate(115deg) skewX(-38deg);
@@ -6768,7 +6774,7 @@ footer.footer {
     transform: rotate(115deg) skewX(-38deg);
     top: 84%;
     right: 39%; }
-  section.service-func .service-func-tab a:before {
+  section.service-func .service-func-tab a:before, section.service-func .service-func-tab a.active::before {
     width: 20px;
     height: 12px;
     top: 82%;
