@@ -6117,7 +6117,7 @@ section {
   background-position: top; }
 
 .index-page {
-  background-image: url(../img/home-bg.png); }
+  background-image: url(../img/home-bg.jpg); }
 
 .contact-page {
   background-image: url(../img/contact-bg.png); }
@@ -6310,7 +6310,7 @@ section.index-mes input, section.index-mes textarea {
     color: #ebebeb; }
 
 section.index-video {
-  margin-bottom: 50px; }
+  margin: 100px 0 50px 0; }
   section.index-video iframe {
     margin: 0 auto;
     display: block;
@@ -6348,17 +6348,17 @@ section.index-stuff {
     color: #000;
     margin-left: -10px; }
   section.index-stuff .index-tab .tab-1 {
-    bottom: -25%;
-    left: -12%; }
+    bottom: -54%;
+    left: -17%; }
   section.index-stuff .index-tab .tab-2 {
-    bottom: -100%;
-    left: -26%; }
+    bottom: -127%;
+    left: -30%; }
   section.index-stuff .index-tab .tab-3 {
     right: 28%;
-    bottom: -175%; }
+    bottom: -205%; }
   section.index-stuff .index-tab .tab-4 {
-    right: 5%;
-    bottom: -102%; }
+    right: 2%;
+    bottom: -138%; }
 
 section.index-table .wrap-contact-table {
   border: none !important;
@@ -6641,68 +6641,12 @@ footer.footer {
     text-align: right; }
 
 @media (max-width: 1199px) {
-  section.index-stuff .index-content {
-    left: 99px;
-    width: 292px;
-    height: 183px; }
-  section.index-stuff .tab-1 {
-    bottom: -40% !important;
-    left: -20% !important; }
-  section.index-stuff .tab-2 {
-    bottom: -120% !important;
-    left: -38% !important; }
-  section.index-stuff .tab-3 {
-    right: 25% !important;
-    bottom: -208% !important; }
-  section.index-stuff .tab-4 {
-    right: -12% !important;
-    bottom: -120% !important; } }
-
-@media (max-width: 991px) {
-  section.index-rent .wrap-rent {
-    top: 18%;
-    right: 10%; }
-    section.index-rent .wrap-rent p {
-      width: 60%;
-      margin: 18px 0 18px 40%; }
-  section.index-video iframe {
-    width: 100%; }
-  section.index-stuff .index-content {
-    top: 5%;
-    left: 102px;
-    width: 299px;
-    height: 186px; }
-  section.index-stuff .tab-1 {
-    bottom: -32% !important;
-    left: -25% !important; }
-  section.index-stuff .tab-2 {
-    bottom: -108% !important;
-    left: -44% !important; }
-  section.index-stuff .tab-3 {
-    right: 2% !important;
-    bottom: -108% !important; }
-  section.index-stuff .tab-4 {
-    right: 35% !important;
-    bottom: -192% !important; }
-  .owl-carousel .index-arrow {
-    opacity: 1 !important; }
-  .owl-carousel .index-left-arrow {
-    left: 0% !important; }
-  .owl-carousel .index-right-arrow {
-    right: 0% !important; } }
-
-@media (max-width: 767px) {
-  section.index-rent .wrap-rent p {
-    font-size: 15px;
-    width: 55%;
-    margin: 18px 0 18px 44%; }
   section.index-stuff {
-    height: 720px !important; }
+    height: 600px; }
     section.index-stuff .index-content {
-      top: 5%;
-      left: 20%;
-      width: 63%;
-      height: 74%; }
+      left: 99px;
+      width: 292px;
+      height: 183px; }
     section.index-stuff .index-tab {
       margin: 0 30px;
       position: relative; }
@@ -6724,6 +6668,40 @@ footer.footer {
         margin-left: 50%; }
       section.index-stuff .index-tab .tab-4 {
         margin-left: 75%; } }
+
+@media (max-width: 991px) {
+  section.index- .wrap-rent {
+    top: 18%;
+    right: 10%; }
+    section.index- .wrap-rent p {
+      width: 60%;
+      margin: 18px 0 18px 40%; }
+  section.index-video iframe {
+    width: 100%; }
+  section.index-stuff .index-content {
+    top: 5%;
+    left: 102px;
+    width: 299px;
+    height: 186px; }
+  .owl-carousel .index-arrow {
+    opacity: 1 !important; }
+  .owl-carousel .index-left-arrow {
+    left: 0% !important; }
+  .owl-carousel .index-right-arrow {
+    right: 0% !important; } }
+
+@media (max-width: 767px) {
+  section.index-rent .wrap-rent p {
+    font-size: 15px;
+    width: 55%;
+    margin: 18px 0 18px 44%; }
+  section.index-stuff {
+    height: 720px !important; }
+    section.index-stuff .index-content {
+      top: 5%;
+      left: 20%;
+      width: 63%;
+      height: 74%; } }
 
 @media (max-width: 750px) {
   section.index-rent {
