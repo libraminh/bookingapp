@@ -90,36 +90,52 @@ section.service-func-service
       &:hover, &:focus
         background: none !important
 
-      &:hover::after
+      &.index::after
         opacity: 1
+        width: 280px
 
-      &:hover, &.active
+      &.index::before
+        opacity: 1
+        transition: all .1s ease-in-out
+        transition-delay: .3s
+
+      &:hover, &.index, &.index-open
         border: 2px solid $accent-red-color
 
       &:after
         display: block
         opacity: 0
         content: ''
-        width: 249px
+        width: 0
         height: 2px
         background: $accent-red-color
         position: absolute
         top: 50%
         left: 100%
-        transition: all .1s ease-in-out
+        transition: all .4s ease-in-out
+        z-index: 9
+
+      &:before
+        display: block
+        opacity: 0
+        content: ''
+        width: 10px
+        height: 10px
+        background: $accent-red-color
+        border-radius: 50%
+        position: absolute
+        top: 45%
+        left: 510%
+        z-index: 10
 
     .link-3, .link-4
       &:after
-        opacity: 0
-        display: block
-        content: ''
-        width: 249px
-        height: 2px
-        background: $accent-red-color
-        position: absolute
-        top: 50%
         left: auto
         right: 100%
+
+      &:before
+        left: auto
+        right: 510%
 
 section.service-carousel
   .owl-carousel

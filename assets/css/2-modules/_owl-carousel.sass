@@ -2,30 +2,64 @@
 .carousel-2, .carousel-3, .carousel-4
   position: relative
 
-
-  &:hover .index-arrow
+  &:hover .box-left
     opacity: 1
+    left: 50px
 
-  &:hover .index-left-arrow
-    left: 0
+  &:hover .box-right
+    opacity: 1
+    right: 46px
 
-  &:hover .index-right-arrow
-    right: 0
-
-  .index-arrow
-    opacity: 0
+  .box-icon
+    background: rgba(35, 35, 35, 0.8)
+    width: 30px !important
+    height: 50px !important
     position: absolute
-    top: 50%
-    width: 50px
-    z-index: 1000
+    top: 45%
+    opacity: 0
     transition: all .2s ease-in-out
 
-  .index-left-arrow
-    left: -5%
+    &:hover
+      background: rgba(35, 35, 35, 0.3)
 
-  .index-right-arrow
-    right: -5%
-    transform: rotateY(180deg)
+  .box-right
+    right: 0
+
+  .box-left
+    left: 0px
+
+  .navPage
+    font-size: 25px
+    color: #d6d6d6
+    position: absolute
+    top: 12px
+
+  .left-nav
+    left: 10px
+
+  .right-nav
+    right: 10px
+
+.navi-btn
+  display: inline-block !important
+  margin: 0 5px !important
+  width: 30px !important
+  height: 30px !important
+  border: 1px solid $border-color
+  position: relative
+
+  &:hover
+    border-color: $accent-red-color
+
+  &:hover i
+    color: $accent-red-color
+
+  i
+    font-size: 25px
+    color: $border-color
+    position: absolute
+    top: 8%
+    left: 32%
 
 @media (min-width: $screen-md-min)
   .owl-item
@@ -36,7 +70,7 @@
     img
       width: 75% !important
       margin-top: 25px !important
-      margin-left: 50px 
+      margin-left: 50px
 
   .owl-item.center
     opacity: 1 !important

@@ -1,3 +1,29 @@
+@media (max-width: $screen-sm-max)
+  .carousel-3, .carousel-2, .carousel-4
+    .box-icon
+      opacity: 1
+
+    .box-left
+      left: 50px
+
+    .box-right
+      right: 46px
+
+  .carousel-2, .carousel-4
+
+    &:hover .box-left
+      left: 0
+
+    &:hover .box-right
+      right: 0
+
+    .box-left
+      left: 0px
+
+    .box-right
+      right: 0px
+
+
 @media (max-width: $screen-xs-max)
   .owl-carousel
     .item
@@ -6,3 +32,17 @@
         margin:  0 auto
     .owl-nav
       top: -40px
+
+  .carousel-2, .carousel-4
+
+    &:hover .box-left
+      left: 50px
+
+    &:hover .box-right
+      right: 50px
+
+    .box-left
+      left: 50px
+
+    .box-right
+      right: 50px
