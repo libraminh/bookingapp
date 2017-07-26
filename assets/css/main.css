@@ -6202,7 +6202,9 @@ section {
   .main-nav .navbar-nav a {
     -webkit-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out; }
+    transition: all .1s ease-in-out;
+    font-family: 'Muli', sans-serif !important;
+    font-weight: 800; }
     .main-nav .navbar-nav a:hover {
       color: rgba(255, 50, 73, 0.9) !important; }
   .main-nav .navbar-brand {
@@ -6391,16 +6393,18 @@ section.index-stuff {
     position: absolute; }
   section.index-stuff .index-tab a {
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    display: block;
+    margin: 0 auto; }
   section.index-stuff .index-tab h5 {
     color: #000;
-    margin-left: -10px; }
+    text-align: center; }
   section.index-stuff .index-tab .tab-1 {
     bottom: -54%;
     left: -17%; }
   section.index-stuff .index-tab .tab-2 {
     bottom: -127%;
-    left: -30%; }
+    left: -35%; }
   section.index-stuff .index-tab .tab-3 {
     right: 28%;
     bottom: -205%; }
@@ -6673,30 +6677,6 @@ section.service-func-service {
 section.service-carousel .owl-carousel {
   overflow: hidden; }
 
-section.service-carousel .carousel-3 {
-  position: relative; }
-  section.service-carousel .carousel-3:hover .index-arrow {
-    opacity: 1; }
-  section.service-carousel .carousel-3:hover .index-left-arrow {
-    left: 0; }
-  section.service-carousel .carousel-3:hover .index-right-arrow {
-    right: 0; }
-  section.service-carousel .carousel-3 .index-arrow {
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    z-index: 1000;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out; }
-  section.service-carousel .carousel-3 .index-left-arrow {
-    left: -5%;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg); }
-  section.service-carousel .carousel-3 .index-right-arrow {
-    right: -5%; }
-
 footer.footer {
   background: #29314c;
   padding: 40px 0;
@@ -6708,6 +6688,28 @@ footer.footer {
     float: right; }
   footer.footer .copyright {
     text-align: right; }
+
+@media (min-width: 2040px) {
+  section.index-stuff .index-tab .tab-3 h5, section.index-stuff .index-tab .tab-2 h5 {
+    color: #c6cfe4 !important; } }
+
+@media (min-width: 1900px) {
+  section.index-stuff .index-tab .tab-1 h5, section.index-stuff .index-tab .tab-4 h5 {
+    color: #c6cfe4 !important; } }
+
+@media (min-width: 1700px) {
+  section.index-table .wrap-table h3, section.index-table .wrap-table p {
+    color: #ebebeb !important; } }
+
+@media (min-width: 1620px) {
+  section.index-table .wrap-service .index-title, section.index-table .wrap-service .index-text {
+    color: #ebebeb !important; } }
+
+@media (min-height: 1080px) {
+  section.index-stuff .index-tab .tab-3 {
+    bottom: -178% !important; }
+  section.index-stuff .index-tab .tab-4 {
+    bottom: -102% !important; } }
 
 @media (min-width: 1200px) {
   section.index-stuff .index-tab img {
@@ -6777,7 +6779,9 @@ footer.footer {
       top: 5%;
       left: 20%;
       width: 63%;
-      height: 74%; } }
+      height: 74%; }
+    section.index-stuff .index-tab h5 {
+      color: #c6cfe4 !important; } }
 
 @media (max-width: 750px) {
   section.index-rent {
@@ -6850,6 +6854,16 @@ footer.footer {
   .contact-img {
     float: none !important;
     margin: 0 auto !important; } }
+
+@media (max-width: 400px) {
+  section.contact-table img, section.index-table img {
+    width: 60%; }
+  section.contact-table h3, section.index-table h3 {
+    font-size: 15px;
+    font-weight: 600; }
+  section.contact-table p, section.index-table p {
+    font-size: 12px;
+    word-wrap: break-word; } }
 
 @media (max-width: 991px) {
   section.service-func-service .service-func-tab {
